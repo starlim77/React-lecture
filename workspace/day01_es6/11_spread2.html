@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            const data = [
+                { id: 1, name: "홍길동", age: 25 },
+                { id: 2, name: "네오", age: 20 },
+                { id: 3, name: "프로도", age: 30 },
+                { id: 4, name: "라이언", age: 30 },
+                { id: 5, name: "죠르디", age: 10 },
+            ];
+
+            const data1 = [...data];
+            console.log(data1);
+
+            //추가
+            const data2 = [
+                ...data,
+                {
+                    id: 6,
+                    name: "어피치",
+                    age: 16,
+                },
+            ];
+            console.log(data2);
+
+            //문제 - id가 4번인 "라이언"을 "제이지"로 30을 35로 변경
+            const data3 = data.map((item, index) => {
+                if (item.id === 4) {
+                    return { ...item, name: "제이지", age: 35 };
+                }
+                return item;
+            });
+            console.log(data3);
+
+            //if문은 복잡해서 안쓴다.
+            const data4 = data.map((item) =>
+                item.id === 4 ? { ...item, name: "제이지", age: 35 } : item
+            );
+        </script>
+    </body>
+</html>
