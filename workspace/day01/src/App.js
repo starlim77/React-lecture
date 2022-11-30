@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Dog from "./component/Dog";
+import Test01 from "./component/Test01";
+import Test02 from "./component/Test02";
+import Test03 from "./component/Test03";
+import Test04 from "./component/Test04";
+import Test05 from "./component/Test05";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    //function App (){}
+    return (
+        <div>
+            {/* <Dog />
+            <hr></hr>
+            <Test01></Test01>
+            <hr></hr>
+            <Test02></Test02>
+            <hr></hr>
+            <Test03></Test03> 
+            <Test04></Test04>
+          */}
+            <Test05></Test05>
+        </div>
+    );
+};
 
 export default App;
