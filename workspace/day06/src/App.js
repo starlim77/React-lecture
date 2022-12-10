@@ -8,7 +8,7 @@ import Test05 from "./component/Test05";
 const App = () => {
     return (
         <div>
-            {/* <Test01></Test01> */}
+            <Test01></Test01>
             <Test02></Test02>
             <Test03></Test03>
             <Test04></Test04>
