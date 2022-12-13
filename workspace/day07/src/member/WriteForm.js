@@ -10,10 +10,10 @@ const WriteForm = () => {
     const [password, setPassword] = useState("");
 
     const onSave = () => {
-        alert(JSON.stringify(member));
         const newData = { id, name, password };
         setMember(member.concat(newData));
-        localStorage.setItem("member", JSON.stringify(member));
+        localStorage.setItem("member", JSON.stringify(member.concat(newData)));
+        alert("등록 완료");
     };
 
     return (
